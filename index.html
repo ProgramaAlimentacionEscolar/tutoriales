@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio</title>
+    
+    <!-- Ícono para navegador y pantallas de inicio -->
+    <link rel="icon" href="libro.png" type="image/png">
+    <link rel="apple-touch-icon" href="libro.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este archivo -->
+    <style>
+        body {
+            background-color: #e0f7fa; /* Color de fondo celeste claro */
+            color: #006064; /* Color de texto oscuro */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #00acc1; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #00838f; /* Color del botón al pasar el ratón */
+        }
+        iframe {
+            margin-top: 20px;
+            border: none;
+            width: 80%;
+            max-width: 560px; /* Ancho máximo para pantallas grandes */
+            height: 315px; /* Altura proporcional */
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccione Calculadora</h1>
+    <button onclick="location.href='calculadora-almuerzos.html'">Tutorial de recetas</button>
+    <button onclick="location.href='calculadora-desayunos.html'">Calculadora Desayunos y Meriendas</button>
+</body>
+</html>
